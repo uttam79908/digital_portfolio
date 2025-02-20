@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Uttam Patel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Uttam Patel</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="uttam.png" alt="Uttam Patel">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Uttam Patel</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A passionate Computer Science student with expertise in Web Development, AI, and Data Structures. Currently pursuing my Bachelor's degree at Pandit Deendayal Energy University.</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/uttam79908"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/uttam-patel-723455253/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/uttam_7990/" target="_blank">
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="my_cv-3.pdf" download><button>Download CV</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>I am a Computer Science student at Pandit Deendayal Energy University, Gandhinagar, with a strong interest in Artificial Intelligence, Web Development, and Data Structures. I have worked on various projects, including a Hospital Management
+                System, a College Website, and an AI Assistant.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Structures & Algorithms</li>
+                <li>Artificial Intelligence</li>
+                <li>Web Development</li>
+                <li>Database Management System (DBMS)</li>
+                <li>Operating Systems</li>
+                <li>Network Security</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Hospital Management System</h3>
+                <p>Developed a hospital management system to manage patient records, appointments, and billing efficiently using Flask, MongoDB, JavaScript, and Bootstrap.</p>
+            </div>
+            <div class="project">
+                <h3>College Website</h3>
+                <p>Created a college website using HTML, CSS, JavaScript, and Django.</p>
+            </div>
+            <div class="project">
+                <h3>The JAVi: AI Assistant</h3>
+                <p>Developed a clone AI assistant combining ChatGPT, Deepseek, and Google Assistant using Express.js, Node.js, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Email: uttampatel79908@gmail.com</p>
+            <p>Phone: +91-7990834561</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/uttam-patel-723455253/">uttam-patel-723455253</a></p>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0
+        });
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+
+</html>
